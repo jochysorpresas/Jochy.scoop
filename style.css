@@ -1,4 +1,4 @@
-* Variables de Color e Identidad */
+/* Variables de Color e Identidad */
 :root {
     --primary-blue: #3a7bd5;
     --primary-yellow: #ffcc00;
@@ -6,7 +6,7 @@
     --primary-red: #ff4757;
     --text-dark: #2c3e50;
     --text-light: #7f8c8d;
-    --bg-light: #f9fbfd;
+    --bg-light: #f4f9ff;
     --white: #ffffff;
 }
 
@@ -23,13 +23,89 @@ body {
     background-color: var(--bg-light);
     line-height: 1.6;
     position: relative;
-    overflow-x: hiddenminmax(300px, 1fr));
+    overflow-x: hidden;
+    
+    /* FONTO CON DIBUJITOS ESPARCIDOS (Autitos, caramelos, ositos, muñecas) */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ctext x='10' y='30' font-size='20' opacity='0.08'%3E🚗%3C/text%3E%3Ctext x='70' y='40' font-size='18' opacity='0.08'%3E🍬%3C/text%3E%3Ctext x='30' y='80' font-size='22' opacity='0.08'%3E🧸%3C/text%3E%3Ctext x='90' y='90' font-size='19' opacity='0.08'%3E👑%3C/text%3E%3Ctext x='100' y='20' font-size='16' opacity='0.08'%3E🎈%3C/text%3E%3C/svg%3E");
+    background-repeat: repeat;
+}
+
+/* Imagen de fondo semitransparente del logo optimizada */
+.background-logo-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vw;
+    max-width: 550px;
+    max-height: 550px;
+    background-image: url('logo-jochy.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05; 
+    mix-blend-mode: multiply; 
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #eef5fc 0%, rgba(255,255,255,0.9) 100%);
+    border-bottom: 4px solid var(--primary-yellow);
+    backdrop-filter: blur(5px);
+}
+
+.logo-container {
+    max-width: 280px;
+    margin: 0 auto 20px auto;
+}
+
+.main-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Sección Título */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+    position: relative;
+    font-weight: 800;
+}
+
+/* Grid de Tarjetas (Cucharadas) */
+.scoops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     align-items: stretch;
 }
 
 .scoop-card {
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
     border-radius: 20px;
     padding: 35px 25px;
     text-align: center;
@@ -47,7 +123,6 @@ body {
     box-shadow: 0 15px 35px rgba(58, 123, 213, 0.15);
 }
 
-/* Colores de bordes por tarjeta para llamar la atención */
 .scoop-card.chico { border-color: var(--primary-blue); }
 .scoop-card.mediano { border-color: var(--primary-yellow); }
 .scoop-card.grande { border-color: var(--primary-red); }
@@ -75,13 +150,6 @@ body {
     margin-bottom: 15px;
 }
 
-.price {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    margin-bottom: 15px;
-}
-
 .description {
     color: var(--text-light);
     font-size: 0.95rem;
@@ -105,7 +173,7 @@ body {
     border-left-color: var(--primary-red);
 }
 
-/* Botones de acción elegantes y sin garabatos */
+/* Botones de acción */
 .btn-buy {
     display: inline-block;
     background-color: var(--primary-green);
@@ -123,7 +191,8 @@ body {
 
 /* Sección de Información Extra */
 .info-section {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
     margin-top: 50px;
     border-top: 1px solid #e1e8ed;
 }
@@ -147,7 +216,7 @@ body {
 
 /* Sección del mensaje con amor (Demoras) */
 .love-notice-section {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+    background: linear-gradient(135deg, rgba(255,249,230,0.8) 0%, rgba(255,255,255,0.8) 100%);
     padding: 20px 0;
 }
 
@@ -177,4 +246,43 @@ body {
 footer {
     text-align: center;
     padding: 30px;
-    background-color: var(-
+    background-color: var(--text-dark);
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+/* Ventana Flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    fill: #fff;
+}
+
+/* Adaptación para Celulares */
+@media (max-width: 768px) {
+    .section-title { font-size: 1.8rem; }
+    .whatsapp-float { bottom: 20px; right: 20px; width: 50px; height: 50px; }
+    .whatsapp-icon { width: 26px; height: 26px; }
+}
