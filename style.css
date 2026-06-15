@@ -1,290 +1,104 @@
-.scoop-card h
-                    }
-/* Variables de Color e Identidad */
-:root {
-    --primary-blue: #3a7bd5;
-    --primary-yellow: #ffcc00;
-    --primary-green: #2ece76;
-    --primary-red: #ff4757;
-    --text-dark: #2c3e50;
-    --text-light: #7f8c8d;
-    --bg-light: #f4f9ff;
-    --white: #ffffff;
-}
+. 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jochy Scoop - Mystery Scoop de Juguetes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
 
-/* Configuración General */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    <div class="background-logo-overlay"></div>
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-dark);
-    background-color: var(--bg-light);
-    line-height: 1.6;
-    position: relative;
-    overflow-x: hidden;
-    
-    /* FONDO CON DIBUJITOS ESPARCIDOS (Autitos, caramelos, ositos, muñecas) */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ctext x='10' y='30' font-size='20' opacity='0.08'%3E🚗%3C/text%3E%3Ctext x='70' y='40' font-size='18' opacity='0.08'%3E🍬%3C/text%3E%3Ctext x='30' y='80' font-size='22' opacity='0.08'%3E🧸%3C/text%3E%3Ctext x='90' y='90' font-size='19' opacity='0.08'%3E👑%3C/text%3E%3Ctext x='100' y='20' font-size='16' opacity='0.08'%3E🎈%3C/text%3E%3C/svg%3E");
-    background-repeat: repeat;
-}
+    <header>
+        <div class="logo-container">
+            <img src="logo-jochy.jpg" alt="Jochy Scoop Logo" class="main-logo">
+        </div>
+        <p class="tagline">¡La emoción de descubrir tus juguetes favoritos en una palada mágica!</p>
+    </header>
 
-/* Imagen de fondo semitransparente del logo - ¡MÁS OSCURA Y VISIBLE ACÁ! */
-.background-logo-overlay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85vw;
-    height: 85vw;
-    max-width: 580px;
-    max-height: 580px;
-    background-image: url('logo-jochy.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.15; /* Subida de 0.05 a 0.15 para que los juguetes resalten mucho más atrás */
-    mix-blend-mode: multiply; 
-    z-index: -1;
-    pointer-events: none;
-}
+    <main class="container">
+        <h2 class="section-title">Elige tu Cucharada Sorpresa</h2>
+        
+        <div class="scoops-grid">
+            <!-- Cucharada Chica -->
+            <div class="scoop-card chico">
+                <span class="badge">Popular</span>
+                <h3>Scoop Chico: "El Antojo"</h3>
+                <p class="price" style="font-size: 1.5rem; color: #3a7bd5; margin: 15px 0; font-weight: bold;">Consultar Precio ✨</p>
+                <p class="description">Ideal para un detalle hermoso. Incluye una palada con cuchara mediana repleta de juguetes, caramelos Sugus y sorpresas.</p>
+                <div class="premium-chance">
+                    ✨ ¡Incluye 1 chance de sacar el <strong>Sobre Sorpresa con Premio PREMIUM</strong>!
+                </div>
+                <a href="https://wa.me/5492236722036?text=Hola!%20Quiero%20consultar%20el%20precio%20del%20Scoop%20Chico%20El%20Antojo%20%F0%9F%A5%84" target="_blank" class="btn-buy">Consultar por WhatsApp</a>
+            </div>
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-}
+            <!-- Cucharada Mediana -->
+            <div class="scoop-card mediano">
+                <span class="badge star">¡El Favorito!</span>
+                <h3>Scoop Mediano: "El Favorito"</h3>
+                <p class="price" style="font-size: 1.5rem; color: #ffcc00; margin: 15px 0; font-weight: bold;">Consultar Precio ✨</p>
+                <p class="description">¡El regalo perfecto de cumpleaños! Una palada grande con entre 6 y 8 objetos espectaculares y muy variados.</p>
+                <div class="premium-chance">
+                    ✨ ¡Incluye 1 chance de sacar el <strong>Sobre Sorpresa con Premio PREMIUM</strong>!
+                </div>
+                <a href="https://wa.me/5492236722036?text=Hola!%20Quiero%20consultar%20el%20precio%20del%20Scoop%20Mediano%20El%20Favorito%20%F0%9F%A5%84" target="_blank" class="btn-buy">Consultar por WhatsApp</a>
+            </div>
 
-/* Header */
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #eef5fc 0%, rgba(255,255,255,0.9) 100%);
-    border-bottom: 4px solid var(--primary-yellow);
-    backdrop-filter: blur(5px);
-}
+            <!-- Cucharada Grande -->
+            <div class="scoop-card grande">
+                <span class="badge premium">Doble Chance</span>
+                <h3>Mega Jochy Scoop</h3>
+                <p class="price" style="font-size: 1.5rem; color: #ff4757; margin: 15px 0; font-weight: bold;">Consultar Precio ✨</p>
+                <p class="description">Para una sorpresa deslumbrante. Una palada doble o gigante llena de juguetes TOP, golosinas y stickers.</p>
+                <div class="premium-chance double">
+                    🔥 <strong>¡PROMO PREMIUM!</strong> Agregamos el doble de dijes/sobres premium en la bandeja para <strong>duplicar tus chances</strong> de ganar el premio mayor.
+                </div>
+                <a href="https://wa.me/5492236722036?text=Hola!%20Quiero%20consultar%20el%20precio%20del%20Mega%20Jochy%20Scoop%20%F0%9F%A5%84%F0%9F%94%A5" target="_blank" class="btn-buy">Consultar por WhatsApp</a>
+            </div>
+        </div>
+    </main>
 
-.logo-container {
-    max-width: 280px;
-    margin: 0 auto 20px auto;
-}
+    <section class="info-section">
+        <div class="container info-grid">
+            <div class="info-item">
+                <h3>📦 Envíos a todo el País</h3>
+                <p>Hacemos envíos a cargo del cliente a través de <strong>Correo Argentino</strong>. Puedes elegir retirar en la sucursal más cercana o recibirlo directamente en la puerta de tu domicilio.</p>
+            </div>
+            <div class="info-item">
+                <h3>🎁 Packaging Mágico</h3>
+                <p>Cada pedido viene en un empaque personalizado, delicado y súper divertido. Cuidamos cada detalle para que abrir la caja sea una experiencia inolvidable, ideal para regalar.</p>
+            </div>
+            <div class="info-item">
+                <h3>💳 ¿Cómo es la modalidad?</h3>
+                <p>El pedido se coordina por WhatsApp y el pago se realiza mediante <strong>transferencia bancaria</strong>. Una vez confirmado tu pago, ¡filmamos y preparamos tu Mystery Scoop personalizado!</p>
+            </div>
+        </div>
+    </section>
 
-.main-logo {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    <section class="love-notice-section">
+        <div class="container">
+            <div class="love-card">
+                <h3>❤️ Hecho con Amor y Dedicación</h3>
+                <p>Debido a la alta demanda de nuestros hermosos scoops, podemos llegar a tener una pequeña demora en el armado y empaquetado. Esto se debe a que trabajamos de manera minuciosa, cuidando cada detalle para que tu pedido sea perfecto. Al hacerlo con tanto amor y dedicación, le otorgamos el tiempo necesario a cada niño. ¡Te aseguramos que la espera valdrá completamente la pena!</p>
+                <p><strong>Cualquier consulta, estamos siempre a tu entera disposición.</strong></p>
+            </div>
+        </div>
+    </section>
 
-.tagline {
-    font-size: 1.2rem;
-    color: var(--primary-blue);
-    font-weight: 600;
-    max-width: 600px;
-    margin: 0 auto;
-}
+    <footer>
+        <p>&copy; 2026 Jochy Scoop. Todos los derechos reservados. Hecho con amor.</p>
+    </footer>
 
-/* Sección Título */
-.section-title {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    color: var(--text-dark);
-    position: relative;
-    font-weight: 800;
-}
+    <a href="https://wa.me/5492236722036?text=Hola%20Jochy%20Scoop!%20Quiero%20hacerte%20una%20consulta." class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.733 5.476 2.013 7.788l-2.013 7.348 7.519-1.972c2.228 1.183 4.771 1.836 7.481 1.836 8.837 0 16-7.163 16-16s-7.163-16-16-16zm8.136 22.319c-.331.932-1.637 1.815-2.617 2.025-.668.143-1.54.256-2.483-.217-3.957-1.981-6.524-6.008-6.721-6.273-.198-.265-1.439-1.916-1.439-3.653 0-1.737.906-2.593 1.229-2.946.324-.353.711-.442.948-.442.237 0 .474.001.679.011.213.01.501-.082.784.601.29.699.988 2.41 1.074 2.589.086.18.144.389.023.63-.121.242-.181.417-.361.629-.181.21-.379.469-.542.63-.18.18-.371.377-.16.739.212.361.942 1.554 2.022 2.518 1.388 1.24 2.553 1.623 2.915 1.804.361.18.572.15.783-.09.211-.241.906-1.054 1.147-1.415.241-.362.482-.301.813-.181.332.12 2.112.996 2.474 1.176.362.181.603.271.693.422.091.151.091.874-.24 1.806z"/>
+        </svg>
+    </a>
 
-/* Grid de Tarjetas (Cucharadas) */
-.scoops-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    align-items: stretch;
-}
-
-.scoop-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(5px);
-    border-radius: 20px;
-    padding: 35px 25px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 3px solid transparent;
-}
-
-.scoop-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(58, 123, 213, 0.15);
-}
-
-.scoop-card.chico { border-color: var(--primary-blue); }
-.scoop-card.mediano { border-color: var(--primary-yellow); }
-.scoop-card.grande { border-color: var(--primary-red); }
-
-/* Badges / Etiquetas de la tarjeta */
-.badge {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--primary-blue);
-    color: var(--white);
-    padding: 5px 15px;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.badge.star { background-color: var(--primary-yellow); color: var(--text-dark); }
-.badge.premium { background-color: var(--primary-red); }
-
-.scoop-card h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-.description {
-    color: var(--text-light);
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    flex-grow: 1;
-}
-
-/* Alertas de Premios Premium */
-.premium-chance {
-    background-color: #f0f7ff;
-    border-left: 4px solid var(--primary-blue);
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    margin-bottom: 25px;
-    text-align: left;
-}
-
-.premium-chance.double {
-    background-color: #fff0f2;
-    border-left-color: var(--primary-red);
-}
-
-/* Botones de acción */
-.btn-buy {
-    display: inline-block;
-    background-color: var(--primary-green);
-    color: var(--white);
-    text-decoration: none;
-    padding: 12px 25px;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
-}
-
-.btn-buy:hover {
-    background-color: #27ae60;
-}
-
-/* Sección de Información Extra */
-.info-section {
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(5px);
-    margin-top: 50px;
-    border-top: 1px solid #e1e8ed;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-}
-
-.info-item h3 {
-    font-size: 1.25rem;
-    color: var(--primary-blue);
-    margin-bottom: 12px;
-}
-
-.info-item p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-}
-
-/* Sección del mensaje con amor (Demoras) */
-.love-notice-section {
-    background: linear-gradient(135deg, rgba(255,249,230,0.8) 0%, rgba(255,255,255,0.8) 100%);
-    padding: 20px 0;
-}
-
-.love-card {
-    background: var(--white);
-    border: 2px dashed var(--primary-yellow);
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.love-card h3 {
-    color: var(--primary-red);
-    margin-bottom: 15px;
-    font-size: 1.4rem;
-}
-
-.love-card p {
-    font-size: 1rem;
-    color: var(--text-dark);
-    margin-bottom: 15px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: var(--text-dark);
-    color: #95a5a6;
-    font-size: 0.9rem;
-}
-
-/* Ventana Flotante de WhatsApp */
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    right: 30px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-
-.whatsapp-icon {
-    width: 32px;
-    height: 32px;
-    fill: #fff;
-}
-
-/* Adaptación para Celulares */
-@media (max-width: 768px) {
-    .section-title { font-size: 1.8rem; }
-    .whatsapp-float { bottom: 20px; right: 20px; width: 50px; height: 50px; }
-    .whatsapp-icon { width: 26px; height: 26px; }
-    }
+</body>
+</html>
