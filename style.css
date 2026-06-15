@@ -35,7 +35,7 @@ body {
     height: 85vw;
     max-width: 580px;
     max-height: 580px;
-    background-image: url('logo-jochy.png');
+    background-image: url("Logo-jochy.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
