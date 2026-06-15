@@ -1,4 +1,4 @@
-/* Variables de Color e Identidad */
+* Variables de Color e Identidad */
 :root {
     --primary-blue: #3a7bd5;
     --primary-yellow: #ffcc00;
@@ -23,80 +23,7 @@ body {
     background-color: var(--bg-light);
     line-height: 1.6;
     position: relative;
-    overflow-x: hidden;
-    /* Dibujos esparcidos de fondo usando patrones de iconos */
-    background-image: radial-gradient(circle, rgba(0,0,0,0.02) 10%, transparent 11%);
-    background-size: 30px 30px;
-}
-
-/* Imagen de fondo semitransparente del logo (Ajustable) */
-.background-logo-overlay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70vw;
-    height: 70vw;
-    max-width: 600px;
-    max-height: 600px;
-    /* Reemplaza por tu logo, igual que en el HTML */
-    background-image: url('logo-jochy.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.05; /* Super clarito para que no tape las letras */
-    z-index: -1;
-    pointer-events: none;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-}
-
-/* Header */
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #eef5fc 0%, #ffffff 100%);
-    border-bottom: 4px solid var(--primary-yellow);
-}
-
-.logo-container {
-    max-width: 280px;
-    margin: 0 auto 20px auto;
-}
-
-.main-logo {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.tagline {
-    font-size: 1.2rem;
-    color: var(--primary-blue);
-    font-weight: 600;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Sección Título */
-.section-title {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    color: var(--text-dark);
-    position: relative;
-    font-weight: 800;
-}
-
-/* Grid de Tarjetas (Cucharadas) */
-.scoops-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    overflow-x: hiddenminmax(300px, 1fr));
     gap: 30px;
     align-items: stretch;
 }
@@ -250,44 +177,4 @@ header {
 footer {
     text-align: center;
     padding: 30px;
-    background-color: var(--text-dark);
-    color: #95a5a6;
-    font-size: 0.9rem;
-}
-
-/* Ventana Flotante de WhatsApp */
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    right: 30px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-
-.whatsapp-icon {
-    width: 32px;
-    height: 32px;
-    fill: #fff;
-}
-
-/* Adaptación para Celulares */
-@media (max-width: 768px) {
-    .section-title { font-size: 1.8rem; }
-    .price { font-size: 2.1rem; }
-    .whatsapp-float { bottom: 20px; right: 20px; width: 50px; height: 50px; }
-    .whatsapp-icon { width: 26px; height: 26px; }
-      }
+    background-color: var(-
