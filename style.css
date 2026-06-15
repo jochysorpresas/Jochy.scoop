@@ -1,3 +1,5 @@
+.scoop-card h
+                    }
 /* Variables de Color e Identidad */
 :root {
     --primary-blue: #3a7bd5;
@@ -285,4 +287,4 @@ footer {
     .section-title { font-size: 1.8rem; }
     .whatsapp-float { bottom: 20px; right: 20px; width: 50px; height: 50px; }
     .whatsapp-icon { width: 26px; height: 26px; }
-                    }
+    }
