@@ -21,7 +21,7 @@ body {
     position: relative;
 }
 
-/* Marca de agua centreada del dinosaurio */
+/* Marca de agua centreada del dinosaurio con el nombre exacto de tu archivo */
 .background-logo-overlay {
     position: fixed;
     top: 50%;
@@ -31,7 +31,7 @@ body {
     height: 85vw;
     max-width: 580px;
     max-height: 580px;
-    background-image: url("Logo-jochy.png");
+    background-image: url("file_000000004fac820eb03d291.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -222,4 +222,4 @@ footer {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    }
+}
