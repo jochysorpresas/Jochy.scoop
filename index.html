@@ -3,100 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jochy Scoop - Mystery Scoop de Juguetes</title>
+    <title>Jochy Scoop - Mystery Scoops Divertidos</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Fuentes modernas, delicadas y súper legibles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="background-logo-overlay"></div>
+    <!-- Fondo de pantalla con la marca de agua del dinosaurio -->
+    <div class="background-overlay"></div>
 
-    <div class="header-site">
+    <!-- Encabezado / Logo Principal -->
+    <header>
         <div class="logo-container">
-            <img src="Logo-jochy.png" alt="Jochy Scoop Logo" class="main-logo">
+            <!-- Colocá la imagen del dinosaurio guardada como 'dino.png' -->
+            <img src="dino.png" alt="Jochy Scoop Dinosaurio" class="main-logo">
+            <h1>Jochy Scoop</h1>
+            <p class="tagline">¡Cucharadas mágicas llenas de sorpresas y diversión!</p>
         </div>
-        <p class="tagline">¡La emoción de descubrir tus juguetes favoritos en una palada mágica!</p>
-    </div>
+    </header>
 
-    <div class="container">
-        <h2 class="section-title">Elige tu Cucharada Sorpresa</h2>
-        
-        <div class="scoops-grid">
-            <!-- Cucharada Chica -->
-            <div class="scoop-card chico">
-                <span class="badge">Popular</span>
-                <h3>Scoop Chico: "El Antojo"</h3>
-                <p style="font-size: 1.5rem; color: #3a7bd5; margin: 15px 0; font-weight: bold;">Consultar Precio ✨</p>
-                <p class="description">Ideal para un detalle hermoso. Incluye una palada con cuchara mediana repleta de juguetes, caramelos Sugus y sorpresas.</p>
-                <div class="premium-chance">
-                    ✨ ¡Incluye 1 chance de sacar el <strong>Sobre Sorpresa con Premio PREMIUM</strong>!
+    <main class="container">
+        <!-- Explicación de la Dinámica -->
+        <section class="intro">
+            <h2>¿Cómo es la Dinámica Principal? 🦖✨</h2>
+            <p>Elegís el tamaño de tu cucharada. Cada <strong>bolita o esfera de vidrio</strong> que sacamos representa un sobre sorpresa que puede contener un <strong>juguete, juego de mesa o golosina</strong>.</p>
+        </section>
+
+        <!-- Los 3 Tamaños de Cucharadas -->
+        <div class="products-grid">
+            <div class="card card-pequeña">
+                <div class="card-icon">🥄</div>
+                <h3>Cucharada Pequeña</h3>
+                <p class="scoop-type">Ideal para empezar</p>
+                <p class="description">Una cucharada repleta de esferas llenas de juguetes o golosinas para descubrir tus primeras sorpresas.</p>
+                <a href="https://wa.me/549236722036?text=¡Hola!%20Quiero%20consultar%20por%20la%20Cucharada%20Pequeña" class="card-btn">Pedir Pequeña</a>
+            </div>
+
+            <div class="card card-mediana highlighted">
+                <div class="badge">¡El más buscado! ⭐</div>
+                <div class="card-icon">🥄✨</div>
+                <h3>Cucharada Mediana</h3>
+                <p class="scoop-type">Doble diversión</p>
+                <p class="description">¡Más cantidad de esferas y oportunidades! La opción favorita para llevarte una gran variedad de premios.</p>
+                <a href="https://wa.me/549236722036?text=¡Hola!%20Quiero%20consultar%20por%20la%20Cucharada%20Mediana" class="card-btn">Pedir Mediana</a>
+            </div>
+
+            <div class="card card-grande">
+                <div class="card-icon">🥄🎉</div>
+                <h3>Cucharada Grande</h3>
+                <p class="scoop-type">¡Super Scoop!</p>
+                <p class="description">¡La más gigante y emocionante! Una cucharada repleta al máximo para vivir una experiencia inolvidable.</p>
+                <a href="https://wa.me/549236722036?text=¡Hola!%20Quiero%20consultar%20por%20la%20Cucharada%20Grande" class="card-btn">Pedir Grande</a>
+            </div>
+        </div>
+
+        <!-- Extra: Sobres Extras Jochy -->
+        <section class="extra-section">
+            <div class="extra-card">
+                <div class="extra-content">
+                    <h2>🎁 Sobres Extras Jochy</h2>
+                    <p>Adquiriendo a partir de <strong>1 cucharada</strong>, podés sumar un valor extra para agregar esferas especiales que representan <strong>1, 2 o 3 sobres más</strong> de premios. ¡Aumentá la emoción de tu Scoop!</p>
                 </div>
-                <a href="https://wa.me/5492236722036?text=Hola!%20Quiero%20consultar%20el%20precio%20del%20Scoop%20Chico%20El%20Antojo%20%F0%9F%A5%84" target="_blank" class="btn-buy">Consultar por WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- Información de Envíos, Pagos y Videos -->
+        <section class="info-section">
+            <div class="info-box">
+                <h3>📹 ¡Tu video personalizado!</h3>
+                <p>Una vez confirmado el pago de tu pedido, preparamos y realizamos el <strong>video de tu Mystery Scoop</strong> con todo el entusiasmo para que veas cada bolita que sale.</p>
             </div>
 
-            <!-- Cucharada Mediana -->
-            <div class="scoop-card mediano">
-                <span class="badge star">¡El Favorito!</span>
-                <h3>Scoop Mediano: "El Favorito"</h3>
-                <p style="font-size: 1.5rem; color: #ffcc00; margin: 15px 0; font-weight: bold;">Consultar Precio ✨</p>
-                <p class="description">¡El regalo perfecto de cumpleaños! Una palada grande con entre 6 y 8 objetos espectaculares y muy variados.</p>
-                <div class="premium-chance">
-                    ✨ ¡Incluye 1 chance de sacar el <strong>Sobre Sorpresa con Premio PREMIUM</strong>!
-                </div>
-                <a href="https://wa.me/5492236722036?text=Hola!%20Quiero%20consultar%20el%20precio%20del%20Scoop%20Mediano%20El%20Favorito%20%F0%9F%A5%84" target="_blank" class="btn-buy">Consultar por WhatsApp</a>
+            <div class="info-box">
+                <h3>📦 Envíos a todo el país</h3>
+                <p>Realizamos envíos a cargo del cliente mediante <strong>Correo Argentino</strong>. Podés elegir entre:</p>
+                <ul>
+                    <li>🏠 Envío Puerta a Puerta (Domicilio)</li>
+                    <li>🏢 Retiro en Sucursal del correo</li>
+                </ul>
             </div>
+        </section>
 
-            <!-- Cucharada Grande -->
-            <div class="scoop-card grande">
-                <span class="badge premium">Doble Chance</span>
-                <h3>Mega Jochy Scoop</h3>
-                <p style="font-size: 1.5rem; color: #ff4757; margin: 15px 0; font-weight: bold;">Consultar Precio ✨</p>
-                <p class="description">Para una sorpresa deslumbrante. Una palada doble o gigante llena de juguetes TOP, golosinas y stickers.</p>
-                <div class="premium-chance double">
-                    🔥 <strong>¡PROMO PREMIUM!</strong> Agregamos el doble de dijes/sobres premium en la bandeja para <strong>duplicar tus chances</strong> de ganar el premio mayor.
-                </div>
-                <a href="https://wa.me/5492236722036?text=Hola!%20Quiero%20consultar%20el%20precio%20del%20Mega%20Jochy%20Scoop%20%F0%9F%A5%84%F0%9F%94%A5" target="_blank" class="btn-buy">Consultar por WhatsApp</a>
-            </div>
-        </div>
-    </div>
+        <!-- Mensaje Aclaratorio con Amor -->
+        <section class="love-note">
+            <p>💖 <strong>Hecho con Amor y Dedicación:</strong> Todos los pedidos se realizan respetando rigurosamente el orden de llegada. Le dedicamos a cada scoop el tiempo y amor que se merece para garantizar que sea una experiencia única y especial para quien lo recibe. ¡Cualquier duda, estamos a tu disposición! 💖</p>
+        </section>
+    </main>
 
-    <div class="info-section">
-        <div class="container info-grid">
-            <div class="info-item">
-                <h3>📦 Envíos a todo el País</h3>
-                <p>Hacemos envíos a cargo del cliente a través de <strong>Correo Argentino</strong>. Puedes elegir retirar en la sucursal más cercana o recibirlo directamente en la puerta de tu domicilio.</p>
-            </div>
-            <div class="info-item">
-                <h3>🎁 Packaging Mágico</h3>
-                <p>Cada pedido viene en un empaque personalizado, delicado y súper divertido. Cuidamos cada detalle para que abrir la caja sea una experiencia inolvidable, ideal para regalar.</p>
-            </div>
-            <div class="info-item">
-                <h3>💳 ¿Cómo es la modalidad?</h3>
-                <p>El pedido se coordina por WhatsApp y el pago se realiza mediante <strong>transferencia bancaria</strong>. Una vez confirmado tu pago, ¡filmamos y preparamos tu Mystery Scoop personalizado!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="love-notice-section">
-        <div class="container">
-            <div class="love-card">
-                <h3>❤️ Hecho con Amor y Dedicación</h3>
-                <p>Debido a la alta demanda de nuestros hermosos scoops, podemos llegar a tener una pequeña demora en el armado y empaquetado. Esto se debe a que trabajamos de manera minuciosa, cuidando cada detalle para que tu pedido sea perfecto. Al hacerlo con tanto amor y dedicación, le otorgamos el tiempo necesario a cada niño. ¡Te aseguramos que la espera valdrá completamente la pena!</p>
-                <p><strong>Cualquier consulta, estamos siempre a tu entera disposición.</strong></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-site">
-        <p>&copy; 2026 Jochy Scoop. Todos los derechos reservados. Hecho con amor.</p>
-    </div>
-
-    <a href="https://wa.me/5492236722036?text=Hola%20Jochy%20Scoop!%20Quiero%20hacerte%20una%20consulta." class="whatsapp-float" target="_blank">
-        <svg viewBox="0 0 32 32" class="whatsapp-icon">
-            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.733 5.476 2.013 7.788l-2.013 7.348 7.519-1.972c2.228 1.183 4.771 1.836 7.481 1.836 8.837 0 16-7.163 16-16s-7.163-16-16-16zm8.136 22.319c-.331.932-1.637 1.815-2.617 2.025-.668.143-1.54.256-2.483-.217-3.957-1.981-6.524-6.008-6.721-6.273-.198-.265-1.439-1.916-1.439-3.653 0-1.737.906-2.593 1.229-2.946.324-.353.711-.442.948-.442.237 0 .474.001.679.011.213.01.501-.082.784.601.29.699.988 2.41 1.074 2.589.086.18.144.389.023.63-.121.242-.181.417-.361.629-.181.21-.379.469-.542.63-.18.18-.371.377-.16.739.212.361.942 1.554 2.022 2.518 1.388 1.24 2.553 1.623 2.915 1.804.361.18.572.15.783-.09.211-.241.906-1.054 1.147-1.415.241-.362.482-.301.813-.181.332.12 2.112.996 2.474 1.176.362.181.603.271.693.422.091.151.091.874-.24 1.806z"/>
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/549236722036?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20en%20Jochy%20Scoop" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="white">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
         </svg>
+        <span>Pedir por WhatsApp</span>
     </a>
 
 </body>
